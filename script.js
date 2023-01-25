@@ -1,3 +1,25 @@
+//const coverImgEl = document.getElementsByClassName("coverImg")
+//const buttonEl = document.getElementsByClassName("btn")
+
+//for (let i = 0; i < coverImgEl.length; i++ ) {
+//  if(coverImgEl[i].src = "images/ComingSoon.png") {
+///    for(let i = 0; i < buttonEl.length; i++) {
+//        buttonEl.style.display = "none"
+//    }
+//  }
+//}
+
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+  const img = box.querySelector("img");
+  const anchor = box.querySelector("h1");
+  console.log(img.src);
+  if (img.getAttribute("src") === "images/ComingSoon.png") {
+    anchor.remove();
+  }
+});
+
 
 function mail() {
     document.querySelector(".mail").classList.toggle("myMail")
