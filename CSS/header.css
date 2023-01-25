@@ -1,0 +1,126 @@
+.nav {
+    position: fixed;
+    display: flex;
+    padding: 0;
+    background-color: #2b2b2b;
+    max-width: 1900px;
+    width: 100%;
+    height: 75px;
+    justify-content: space-between;
+    z-index: 10000000000000000000000000000000000000000;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    transform: translateY( -25px);
+    color: white;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 3px;
+}
+
+#list {
+    display: flex;
+    width: fit-content;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px;
+    width: fit-content;
+}
+
+ul li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.menu button {
+    width: 140px;
+    height: 45px;
+    background: none;
+    border: 1px solid #54D7BB;
+    border-radius: 10px;
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+#burger {
+    display: none;
+}
+
+
+.link{
+    position: absolute;
+    top: -2px;
+    left: 23px;
+    text-decoration: none;
+    color: #54D7BB;
+    font-weight: 300;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.menu button:hover {
+    box-shadow: 0px 0px 10px 3px #54D7BB;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    background: none;
+    color: #54D7BB;
+    text-shadow: 0px 0px 8px rgba(84, 215, 187, 0.6);
+}
+
+@media screen and (max-width:700px) {
+    .nav {
+        top: 0;
+        z-index: 100000000000000;
+    }
+    .menu{
+        position: fixed;
+        transition: 1s;
+        max-width: 230px;
+        width: 100%;
+        height: 650px;
+        background-color: #2b2b2b;
+        transform: translate(-600px, 69px);
+    }
+
+    #list {
+        display: block;
+        transform: translateY(20px);
+        max-width: 600px;
+        width: 100%;
+        height: 500px;
+        z-index: 100;
+        background: none;
+    }
+
+    .show {
+        transform: translate(0px, 70px);
+        height: 100%;
+        display: block;
+    }
+    
+    #burger {
+        color: white;
+        transform: translate(-30px, 20px);
+        display: block;
+    }
+}

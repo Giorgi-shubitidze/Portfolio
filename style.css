@@ -1,0 +1,1376 @@
+html{   scroll-behavior: smooth;   scroll-padding-top: 90px; }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #212121;
+    height: 5300px;
+    font-family: 'Gemunu Libre', sans-serif;
+    justify-content: center;
+}
+ 
+
+.bg , .bg2 {
+    z-index: 0;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.bg2 {
+    transform: translateY(1150px) rotate(180deg);
+}
+
+.bg3 {
+    transform: translateY(1000px) rotate(0deg);
+}
+.fig1 {
+    position: absolute;
+    background: #3B404F;
+    animation: fig1 infinite;
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    animation-duration: 22s;
+    bottom: -150px;
+}
+
+.fig2 {
+    position: absolute;
+    background: #3B404F;
+    animation: fig1 infinite;
+    left: 33%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+    animation-duration: 25s;
+    bottom: -150px;
+}
+
+.fig3 {
+    position: absolute;
+    background: #273866;
+    animation: fig1 infinite;
+    left: 12%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 1s;
+    animation-duration: 15s;
+    bottom: -150px;
+}
+
+.fig4 {
+    position: absolute;
+    background: #3B404F;
+    animation: fig1 infinite;
+    left: 95%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    animation-duration: 13s;
+    bottom: -150px;
+}
+
+.fig5 {
+    position: absolute;
+    background: #65213D;
+    animation: fig1 infinite;
+    left: 45%;
+    width: 0px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 17s;
+    bottom: -150px;
+}
+
+.fig6 {
+    position: absolute;
+    background: #273866;
+    animation: fig1 infinite;
+    left: 83%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 5s;
+    animation-duration: 20s;
+    bottom: -150px;
+}
+
+.fig7 {
+    position: absolute;
+    background: #273866;
+    animation: fig1 infinite;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3s;
+    animation-duration: 15s;
+    bottom: -150px;
+}
+
+.fig8 {
+    position: absolute;
+    background: #65213D;
+    animation: fig1 infinite;
+    left: 40%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 4s;
+    animation-duration: 23s;
+    bottom: -150px;
+}
+
+.fig9 {
+    position: absolute;
+    background: #65213D;
+    animation: fig1 infinite;
+    left: 75%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 1s;
+    animation-duration: 18s;
+    bottom: -150px;
+}
+
+.fig10 {
+    position: absolute;
+    background: #273866;
+    animation: fig1 infinite;
+    left: 14%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 20s;
+    bottom: -250px;
+}
+
+@keyframes fig1 {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.cover {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(900px);
+    background: #212121;
+    max-width: 3000px;
+    width: 100%;
+    height: 260px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        max-width: 6000px!important;
+    }
+}
+ /*
+@media screen and (max-width:1680px) {
+   
+    .mail-link {
+        transform: translate(1340px , 830px);    
+    }
+
+    .links {
+        z-index: 5000;
+    }
+
+    .about2 h1 {
+        transform: translate(900px , 490px);
+    }
+    .about2 h3 {
+        transform: translate(900px , 500px);
+    }
+    .contact {
+        transform: translate(340px,3200px);
+    }
+    
+}*/
+/*
+@media screen and (max-width: 1600px) {
+    .mail-link {
+        transform: translate(1250px , 770px);    
+    }
+    .about2 img {
+        transform: translate(100px , 1040px);
+    }
+    .about2 h1 {
+        transform: translate(800px , 490px);
+    }
+    .about2 h3 {
+        transform: translate(800px , 500px);
+    }
+
+    .contact {
+        transform: translate(290px,3200px);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .about2 img {
+        transform: translate(90px , 980px);
+        height: 450px;
+    }
+
+    .about2 h1 {
+        font-size: 40px;
+        transform: translate(740px , 490px);
+    }
+
+    .about2 h3 {
+        font-size: 20px;
+        max-width: 600px;
+        width: 100%;
+        transform: translate(740px , 500px);
+    }
+
+    .mail-link {
+        transform: translate(1090px , 780px);
+    }
+
+    .contact {
+        transform: translate(220px , 3200px);
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .about2 img {
+        transform: translate(60px , 980px);
+        height: 450px;
+    }
+
+    .about2 h1 {
+        font-size: 40px;
+        transform: translate(710px , 490px);
+    }
+
+    .about2 h3 {
+        font-size: 20px;
+        max-width: 600px;
+        width: 100%;
+        transform: translate(710px , 500px);
+    }
+
+    .mail-link {
+        transform: translate(1025px , 780px);
+    }
+
+    .contact {
+        transform: translate(180px , 3200px);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        height:  4700px;
+    }
+    .textcont {
+        top: 40%;
+    }
+    .line1 {
+        top: 50%;
+        left: 30%;
+    }
+
+    .line2 {
+        top: 52%;
+        left: 34%;
+    }
+
+    .nav {
+        transform: translateY(-28px);
+    }
+    .about2 img {
+        display: none;
+    }
+
+    .about2 h1 {
+        font-size: 40px;
+        transform: translate(150px , 730px);
+    }
+
+    .about2 h3 {
+        font-size: 20px;
+        max-width: 1000px;
+        width: 100%;
+        transform: translate(150px , 740px);
+        
+    }
+    .links {
+        transform: translate(5px , 650px);
+    }
+    .mail-link {
+        transform: translate(890px , 760px);
+        z-index: 5000;
+    }
+    .card {
+        right: 20%;
+    }
+
+    .card1 {
+        left: 25%;
+        margin-top: 30px;
+    }
+
+    .contact {
+        transform: translate(130px , 3200px);
+    }
+}
+
+
+@media screen and  (max-width: 1024px) {
+    body {
+        height: 4600px;
+    }
+    .nav {
+        transform: translateY(-25px);
+    }
+
+    .line1 {
+        top: 55%;
+        left: 28%;
+    }
+
+    .line2 {
+        top: 58%;
+        left: 31%;
+    }
+
+    .cover {
+        transform: translateY(840px);
+        height: 300px;
+    }
+
+    .textcont {
+        left: 55%;
+    }
+
+    .about2 img {
+        transform: translate(70px , 880px);
+        width: 500px;
+        height: 400px;
+        display: none;
+    }
+
+    .about2 h1 {
+        width: fit-content;
+        font-size: 35px;
+        transform: translate(100px , 740px);
+    }
+
+    .about2 h3 {
+        max-width: 850px;
+        font-size: 18px;
+        transform: translate(100px , 760px);
+    }
+
+    .mail-link {
+        transform: translate(900px , 1030px) rotate(-90deg);
+        z-index: 10000;
+    }
+    .myMail {
+    transform: translate(160px , -120px) rotate(90deg);
+    }
+
+    .card {
+        right: 20%;
+    }
+
+    .card1 {
+        left: 25%;
+        margin-top: 30px;
+    }
+
+    .contact {
+        width: 800px;
+        height: 400px;
+        transform: translate(100px,3200px);
+    }
+
+    .contact h2 {
+        transform: translate(-200px,100px);
+    }
+    .contact button {
+    transform: translate( -380px, 180px);
+    }
+
+    .links {
+        transform: translate(20px , 580px) rotate(90deg);
+        z-index: 10000;
+    }
+
+    .yticon {
+        transform: rotate(-90deg);
+    }
+    .linkedin {
+        transform: rotate(-90deg);
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        height: 4300px!important;
+    }
+
+    .textcont {
+        max-width: 600px;
+        width: 100%;
+        top: 50%;
+        left: 46%;
+        transform: translate(-50% , -50%);
+    }
+    .experience li {
+        max-width: 600px;
+        width: 100%;
+    }
+    .about2 h1 {
+        width: fit-content;
+        font-size: 35px;
+        transform: translate(100px , 720px);
+    }
+    .about2 h3 {
+        max-width: 600px;
+        font-size: 15px;
+        transform: translate(100px , 740px);
+    }
+    .line1 {
+        width: 500px;
+    }
+
+    .line2 {
+        width: 440px;
+    }
+    .links , .mail-link {
+        display: none;
+    }
+    .contact {
+        width: 500px;
+        height: 400px;
+        transform: translate(135px, 3200px);
+    }
+    .contact h2 {
+        transform: translate(-50px,100px);
+    }
+
+    .contact button {
+        transform: translate(-230px,180px);
+    }
+    .card {
+        animation-name: none;
+        transform: translate(50px,-50px) rotate(0deg);
+    }
+
+    .card1 {
+        margin: 0;
+        animation-name: none;
+        transform: translate(-220px,-50px) rotate(0deg);
+    }
+
+    .cover {
+        transform: translateY(650px);
+        height: 410px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 4300px!important;
+    }
+
+    .textcont {
+        max-width: 600px;
+        width: 100%;
+        top: 50%;
+        left: 46%;
+        transform: translate(-50% , -50%);
+    }
+    .experience li {
+        max-width: 600px;
+        width: 100%;
+    }
+    .about2 h1 {
+        width: fit-content;
+        font-size: 35px;
+        transform: translate(100px , 720px);
+    }
+    .about2 h3 {
+        max-width: 600px;
+        font-size: 15px;
+        transform: translate(100px , 740px);
+    }
+    .line1 {
+        width: 500px;
+    }
+
+    .line2 {
+        width: 440px;
+    }
+    .links , .mail-link {
+        display: none;
+    }
+    .contact {
+        width: 500px;
+        height: 400px;
+        transform: translate(135px, 3200px);
+    }
+    .contact h2 {
+        transform: translate(-50px,100px);
+    }
+
+    .contact button {
+        transform: translate(-230px,180px);
+    }
+    .card {
+        animation-name: none;
+        transform: translate(50px,-50px) rotate(0deg);
+    }
+
+    .card1 {
+        margin: 0;
+        animation-name: none;
+        transform: translate(-220px,-50px) rotate(0deg);
+    }
+
+    .cover {
+        transform: translateY(715px);
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 6900px!important;
+    }
+    .nav {
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        transition: 1s;
+        max-width: 230px;
+        width: 100%;
+        height: 650px;
+        background-color: #2b2b2b;
+        transform: translate(-600px, 69px);
+    }
+
+    #list {
+        display: block;
+        transform: translateY(20px);
+        max-width: 600px;
+        width: 100%;
+        height: 500px;
+        z-index: 100;
+        background: none;
+    }
+
+    .show {
+        transform: translate(0px, 70px);
+        display: block;
+    }
+    
+    #burger {
+        color: white;
+        transform: translate(-30px, 20px);
+        display: block;
+    }
+
+    .textcont {
+        cursor: default;
+        position: absolute;
+        width: 500px;
+        top: 47%;
+        left: 54%;
+        transform: translate(-50% , -50%);
+        z-index: 1;
+        font-family: 'Gemunu Libre', sans-serif;
+    }
+    
+    .textcont h5 {
+        width: fit-content;
+        font-size: 13px;
+    }
+    
+    .textcont h1 {
+        width: fit-content;
+        letter-spacing: 5px;
+        font-size: 55px;
+        margin: 0;
+    }
+    
+    .textcont h3 {
+        width: fit-content;
+        font-size: 35px;
+        margin: 0;
+    }
+    
+    .textcont button {
+        transform: translateY(5px);
+    }
+    
+    .line1 {
+        width: 400px;
+    }
+
+    .line2 {
+        width: 340px;
+    }
+
+    .about2 h1 {
+        width: fit-content;
+        font-size: 30px;
+        transform: translate(40px , 720px);
+    }
+    .about2 h3 {
+        max-width: 500px;
+        font-size: 15px;
+        transform: translate(40px , 740px);
+    }
+    
+    .experience ul li {
+        width: 400px;
+    }
+
+    .card {
+        width: 570px;
+        transform: translate(-25px,-50px) rotate(0deg);
+    }
+    .card1 {
+        width: 570px;
+        transform: translate(-205px,-50px) rotate(0deg);
+    }
+
+    .name {
+        font-size: 35px;
+    }
+
+    .html {
+        display: block;
+    }
+
+    .pj1 {
+        width: 500px;
+        transform: translateX(30px);
+    }
+    .pj2 {
+        width: 500px;
+        transform: translate(30px, 60px); 
+    }
+    .pj3 {
+        width: 500px;
+        transform: translate(30px, 120px); 
+    }
+
+    #boot {
+        position: absolute;
+        transform: translateY(1415px);
+    }
+    .pj4 {
+        width: 500px;
+        transform: translate(30px,800px)
+    }
+    .pj5 {
+        width: 500px;
+        transform: translate(30px, 860px); 
+    }
+
+    .pj6 {
+        width: 500px;
+        transform: translate(30px, 920px); 
+    }
+
+    #react {
+        position: absolute;
+        transform: translateY(2700px);
+    }
+
+    .pj7 {
+        width: 500px;
+        transform: translate(30px,1500px)
+    }
+    .pj8 {
+        width: 500px;
+        transform: translate(30px, 1560px); 
+    }
+
+    .pj9 {
+        width: 500px;
+        transform: translate(30px, 1620px); 
+    }
+
+    .contact {
+        transform: translate(52px, 5500px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .line1 {
+        left: 10%;
+        width: 400px;
+    }
+
+    .line2 {
+        left: 15%;
+        width: 340px;
+    }
+
+    .textcont {
+        cursor: default;
+        position: absolute;
+        width: 380px;
+        top: 49%;
+        left: 53%;
+        transform: translate(-50% , -50%);
+        z-index: 1;
+        font-family: 'Gemunu Libre', sans-serif;
+    }
+    
+    .textcont h5 {
+        width: fit-content;
+        font-size: 13px;
+    }
+    
+    .textcont h1 {
+        width: fit-content;
+        letter-spacing: 5px;
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    .textcont h3 {
+        width: fit-content;
+        font-size: 35px;
+        margin: 0;
+    }
+    
+    .textcont button {
+        transform: translateY(5px);
+    }
+
+    .about2 {
+        width: 420px;
+    }
+    .about2 h1 {
+        width: fit-content;
+        font-size: 30px;
+        transform: translate(20px , 720px);
+    }
+    .about2 h3 {
+        max-width: 390px;
+        margin: 0;
+        font-size: 15px;
+        transform: translate(20px , 740px);
+    }
+    .experience ul {
+        width: 300px;
+    }
+
+    .experience ul li{
+        width: 300px;
+        padding: 0;
+    }
+
+
+    .card {
+        width: 425px;
+        transform: translate(-23px,-50px) rotate(0deg);
+        border-radius: 0;
+    }
+
+    .card1 {
+        width: 425px;
+        transform: translate(-158px,-50px) rotate(0deg);
+        border-radius: 0;
+    }
+    .name {
+        font-size: 22px;
+        transform: translate(120px,10px);
+    }
+
+    
+
+    .pj1 {
+        width: 425px;
+        transform: translateX(-21px);
+        border-radius: 0;
+    }
+    .pj2 {
+        width: 425px;
+        transform: translate(-21px, 60px); 
+        border-radius: 0;
+    }
+    .pj3 {
+        width: 425px;
+        transform: translate(-21px, 120px); 
+        border-radius: 0;
+    }
+
+    #boot {
+        position: absolute;
+        transform: translateY(1415px);
+    }
+    .pj4 {
+        width: 425px;
+        transform: translate(-21px,800px);
+        border-radius: 0;
+    }
+    .pj5 {
+        width: 425px;
+        transform: translate(-21px, 860px); 
+        border-radius: 0;
+    }
+
+    .pj6 {
+        width: 425px;
+        transform: translate(-21px, 920px); 
+        border-radius: 0;
+    }
+
+    #react {
+        position: absolute;
+        transform: translateY(2700px);
+    }
+
+    .pj7 {
+        width: 425px;
+        transform: translate(-21px,1500px);
+        border-radius: 0;
+    }
+
+    .pj8 {
+        width: 425px;
+        transform: translate(-21px, 1560px); 
+        border-radius: 0;
+    }
+
+    .pj9 {
+        width: 425px;
+        transform: translate(-21px, 1620px); 
+        border-radius: 0;
+    }
+
+    .contact {
+        width: 425px;
+        margin: 0;
+        border: none;
+        transform: translate(0px, 5500px);
+    }
+
+    .contact ul {
+        width: 390px;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        transform: translateX(-10px);
+    }
+
+    .contact ul li {
+        width: 300px;
+    }
+
+    .contact h2 {
+        transform: translate(20px,100px);
+        font-size: 18px;
+    }
+
+    .contact button {
+        transform: translate(-130px, 180px);
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    
+    .about2 {
+        margin: 0;
+
+    }
+    .textcont {
+        left: 50%;
+        width: 370px;
+        margin: 0;
+    }
+    .textcont h5 {
+        width: 350px;
+    }
+    .line1 {
+        left: 0%;
+        width: 400px;
+    }
+
+    .line2 {
+        left: 5%;
+        width: 340px;
+    }
+
+    .about2 {
+        width: 380px;
+    }
+
+    .about2 h1 {
+        width: fit-content;
+        margin: 0;
+        font-size: 30px;
+        transform: translate(20px , 720px);
+    }
+
+    .about2 h3 {
+        max-width: 380px;
+        margin: 0!important;
+        padding: 0;
+        font-size: 15px;
+        transform: translate(20px , 740px);
+    }
+
+    .cover {
+        transform: translateY(515px)!important;
+        height: 550px;
+        margin: 0;
+    }
+
+    .experience ul {
+        width: 300px;
+    }
+
+    .experience ul li{
+        width: 300px;
+        padding: 0;
+    }
+
+
+    .card {
+        width: 400px;
+        transform: translate(-12px,-50px) rotate(0deg);
+        border-radius: 0;
+    }
+
+    .card1 {
+        width: 400px;
+        transform: translate(-146px,-50px) rotate(0deg);
+        border-radius: 0;
+    }
+    
+    
+
+    .name {
+        font-size: 20px;
+        transform: translate(120px,10px);
+    }
+
+    .projects {
+        margin: 0;
+    }
+
+
+    .pj1 {
+        width: 400px;
+        transform: translateX(-21px);
+        border-radius: 0;
+    }
+    .pj2 {
+        width: 400px;
+        transform: translate(-21px, 60px); 
+        border-radius: 0;
+    }
+    .pj3 {
+        width: 400px;
+        transform: translate(-21px, 120px); 
+        border-radius: 0;
+    }
+
+    #boot {
+        position: absolute;
+        transform: translateY(1415px);
+    }
+    .pj4 {
+        width: 400px;
+        transform: translate(-21px,800px);
+        border-radius: 0;
+    }
+    .pj5 {
+        width: 400px;
+        transform: translate(-21px, 860px); 
+        border-radius: 0;
+    }
+
+    .pj6 {
+        width: 400px;
+        transform: translate(-21px, 920px); 
+        border-radius: 0;
+    }
+
+    #react {
+        position: absolute;
+        transform: translateY(2700px);
+    }
+
+    .pj7 {
+        width: 400px;
+        transform: translate(-21px,1500px);
+        border-radius: 0;
+    }
+
+    .pj8 {
+        width: 400px;
+        transform: translate(-21px, 1560px); 
+        border-radius: 0;
+    }
+
+    .pj9 {
+        width: 400px;
+        transform: translate(-21px, 1620px); 
+        border-radius: 0;
+    }
+    .contact {
+        margin: 0;
+        padding: 0;
+        width: 350px;
+    }
+
+    #cov {
+        top: -630px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .line1 {
+        left: -3%;
+        width: 400px;
+    }
+
+    .line2 {
+        left: 5%;
+        width: 340px;
+    }
+
+    .textcont {
+        width: 360px;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        z-index: 1;
+    }
+    
+    .textcont h5 {
+        width: fit-content;
+        font-size: 13px;
+        max-width: 330px;
+        width: 100%;
+        transform: translateX(10px);
+    }
+    
+    .textcont h1 {
+        width: fit-content;
+        letter-spacing: 5px;
+        font-size: 40px;
+        margin: 0;
+        transform: translateX(10px);
+    }
+    
+    .textcont h3 {
+        max-width: 300px;
+        width: 100%;
+        font-size: 30px;
+        margin: 0;
+        transform: translateX(10px);
+    }
+    
+    .textcont button {
+        transform: translate(10px,5px);
+    }
+    .about2 {
+        width: 340px;
+    }
+
+
+    .about2 h1 {
+        width: fit-content;
+        font-size: 30px;
+        transform: translate(20px , 720px);
+    }
+    .about2 h3 {
+        max-width: 340px;
+        margin: 0;
+        font-size: 15px;
+        transform: translate(20px , 740px);
+    }
+
+    .card {
+        width: 375px;
+        transform: translate(0px,-50px) rotate(0deg);
+        border-radius: 0;
+    }
+
+    .card1 {
+        width: 375px;
+        transform: translate(-134px,-50px) rotate(0deg);
+        border-radius: 0;
+    }
+    .name {
+        font-size: 20px;
+        width: 200px;
+        transform: translate(120px,10px);
+    }
+
+    .place {
+        position: absolute;
+        width: fit-content;
+        font-size: 17px;
+        color: white;
+        letter-spacing: 2px;
+        transform: translate(120px,62px);
+    }
+    
+    .time {
+        position: absolute;
+        width: fit-content;
+        font-size: 13px;
+        color: white;
+        letter-spacing: 1px;
+        transform: translate(120px, 90px);
+    }
+
+    .pj1 {
+        width: 375px;
+        transform: translateX(-21px);
+        border-radius: 0;
+    }
+    .pj2 {
+        width: 375px;
+        transform: translate(-21px, 60px); 
+        border-radius: 0;
+    }
+    .pj3 {
+        width: 375px;
+        transform: translate(-21px, 120px); 
+        border-radius: 0;
+    }
+
+    .pj4 {
+        width: 375px;
+        transform: translate(-21px,800px);
+        border-radius: 0;
+    }
+    .pj5 {
+        width: 375px;
+        transform: translate(-21px, 860px); 
+        border-radius: 0;
+    }
+
+    .pj6 {
+        width: 375px;
+        transform: translate(-21px, 920px); 
+        border-radius: 0;
+    }
+
+    .pj7 {
+        width: 375px;
+        transform: translate(-21px,1500px);
+        border-radius: 0;
+    }
+
+    .pj8 {
+        width: 375px;
+        transform: translate(-21px, 1560px); 
+        border-radius: 0;
+    }
+
+    .pj9 {
+        width: 375px;
+        transform: translate(-21px, 1620px); 
+        border-radius: 0;
+    }
+
+    .contact {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .nav {
+        transform: translateY(-7px);
+    }
+
+    .line1 {
+        left: 5%;
+        top: 62%;
+        width: 280px;
+    }
+
+    .line2 {
+        left: 11%;
+        top: 65%;
+        width: 240px;
+    }
+
+    .textcont {
+        width: 300px;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        z-index: 1;
+    }
+
+    .textcont h5 {
+        width: fit-content;
+        line-height: 18px;
+        font-size: 13px;
+        max-width: 290px;
+        width: 100%;
+        transform: translateX(10px);
+    }
+    
+    .textcont h1 {
+        width: fit-content;
+        letter-spacing: 5px;
+        font-size: 33px;
+        margin: 0;
+        transform: translateX(10px);
+    }
+    
+    .textcont h3 {
+        max-width: 250px;
+        width: 100%;
+        font-size: 30px;
+        margin: 0;
+        transform: translateX(10px);
+    }
+    .cover {
+        width: 315px;
+    }
+    .textcont button {
+        transform: translate(10px,5px);
+    }
+    .about2 {
+        width: 290px;
+    }
+
+    .about2 h1 {
+        width: fit-content;
+        font-size: 27px;
+        margin: 0;
+        transform: translate(20px , 720px);
+    }
+    .about2 h3 {
+        max-width: 300px;
+        margin: 0;
+        font-size: 15px;
+        transform: translate(20px , 740px);
+    }
+
+    .title {
+        transform: translateY(60px);
+        font-size: 28px;
+    }
+    
+    .experience ul {
+        width: 250px;
+    }
+
+    .experience ul li {
+        width: 260px;
+    }
+
+    .card {
+        width: 320px;
+        transform: translate(0px,10px) rotate(0deg);
+        border-radius: 0;
+    }
+
+    .card1 {
+        width: 320px;
+        transform: translate(-120px,20px) rotate(0deg);
+        border-radius: 0;
+    }
+
+    .pj1 {
+        width: 320px;
+        transform: translateX(-21px);
+        border-radius: 0;
+    }
+    .pj2 {
+        width: 320px;
+        transform: translate(-21px, 60px); 
+        border-radius: 0;
+    }
+    .pj3 {
+        width: 320px;
+        transform: translate(-21px, 120px); 
+        border-radius: 0;
+    }
+
+    .pj4 {
+        width: 320px;
+        transform: translate(-21px,800px);
+        border-radius: 0;
+    }
+    .pj5 {
+        width: 320px;
+        transform: translate(-21px, 860px); 
+        border-radius: 0;
+    }
+
+    .pj6 {
+        width: 320px;
+        transform: translate(-21px, 920px); 
+        border-radius: 0;
+    }
+
+    .pj7 {
+        width: 320px;
+        transform: translate(-21px,1500px);
+        border-radius: 0;
+    }
+
+    .pj8 {
+        width: 320px;
+        transform: translate(-21px, 1560px); 
+        border-radius: 0;
+    }
+
+    .pj9 {
+        width: 320px;
+        transform: translate(-21px, 1620px); 
+        border-radius: 0;
+    }
+
+    .contact ul {
+        width: 320px;
+    }
+    .contact {
+        width: 300px;
+        border: none;
+    }
+
+    .contact ul {
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        transform: translateX(-10px);
+    }
+
+    .contact ul li {
+        width: 300px;
+    }
+
+    .contact h2 {
+        font-size: 15px;
+    }
+
+    .contact button {
+        transform: translate(-105px , 160px);
+    }
+}
+*/

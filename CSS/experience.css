@@ -1,0 +1,176 @@
+.experience {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 700px;
+    top: 1000px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    display: flex;
+    height: fit-content;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.title h1 {
+    color: #93AEFF;
+    width: fit-content;
+    cursor:default;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    top: 100px;
+    left: 130px;
+    background-color: #424242;
+    width: 700px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 120px;
+    border-radius: 15px;
+    animation: card1 infinite;
+    animation-duration: 5s;
+}
+
+.card img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes card1 {
+    0% {
+    transform: rotate(5deg);
+    }
+
+    50% {
+    transform: rotate(7deg);
+    }
+    100% {
+    transform: rotate(5deg);
+    }
+}
+
+.card1 {
+    position: relative;
+    display: flex;
+    top: 170px;
+    right: 150px;
+    background-color: #424242;
+    width: 700px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 120px;
+    border-radius: 15px;
+    animation: card2 infinite;
+    animation-duration: 5s;
+}
+
+.card1 img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes card2 {
+    0% {
+    transform: rotate(-5deg);
+    }
+
+    50% {
+    transform:rotate(-7deg);
+    }
+    100% {
+    transform: rotate(-5deg);
+    }
+}
+
+.name {
+    position: relative;
+    color: white;
+    letter-spacing: 2px;
+}
+.name h3 {
+    font-size: 40px;
+    margin: 0;
+    top: 10px;
+}
+
+
+.place {
+    position: absolute;
+    width: fit-content;
+    color: white;
+    letter-spacing: 2px;
+    transform: translate(120px,55px);
+}
+
+.place h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+
+.time {
+    position: absolute;
+    width: fit-content;
+    color: white;
+    letter-spacing: 1px;
+    transform: translate(120px, 90px);
+}
+.time h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .card {
+        animation: none;
+        left: 0;
+        right: 0;
+    }
+
+    .card1 {
+        animation: none;
+        left: 0;
+        right: 0;
+    }
+
+   
+}
+
+@media screen and (max-width: 700px) {
+   .name h3 {
+    font-size: 5vw;
+    transform: translateY(7px);
+   }
+   .place h3 {
+    font-size: 16px;
+   }
+
+   .time h3 {
+    font-size: 12px;
+   }
+
+}

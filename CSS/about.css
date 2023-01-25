@@ -1,0 +1,378 @@
+.about {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    top: 250px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lines {
+    position: relative;
+    display: flex;
+    top: 280px;
+    flex-direction: column;
+}
+
+.line1 {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    height: 1px;
+    background-color:#309781;
+    transform: rotate(-29.86deg);
+    z-index: 0;
+}
+
+.line2 {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    height: 1px;
+    background-color:#2f4788;
+    transform: rotate(-29.86deg);
+    z-index: 0;
+}
+
+.textcont {
+    cursor: default;
+    position: relative;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.textcont h5 {
+   display: flex;
+   color: #54D7BB;
+   letter-spacing: 2px;
+   max-width: 700px;
+   width: 100%;
+   margin: 0;
+   font-size: 20px;
+}
+
+.textcont h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 70px;
+    margin: 0;
+}
+
+.textcont h3 {
+    font-size: 50px;
+    color: #93AEFF;
+    margin: 0;
+}
+
+.textcont button {
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+    background: none;
+    border: 1px solid #54D7BB;
+    border-radius: 10px;
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+
+.explore {
+    text-decoration: none;
+    font-size: 20px;
+    color: #54D7BB;
+    font-weight: 400;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.textcont button:hover {
+    box-shadow: 0px 0px 10px 3px #54D7BB;
+}
+
+.links {
+    position: fixed;
+    display: flex;
+    bottom: 260px;
+    flex-direction: column;
+    width: min-content;
+    z-index: 10000000000;
+}
+
+
+.yticon i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 25px;
+    color: #387064;
+    transform: translate(10px , 100px);
+    animation: youtube;
+    animation-duration: 2s;
+    transition: 0.5s;
+}
+
+.yticon i:hover {
+    color: #3db59b;
+}
+
+@keyframes youtube {
+    0% {
+        transform: translate(10px, 300px);
+    }
+
+    100% {
+        transform: translate(10px, 100px);
+    }
+}
+
+.linkedin i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 25px;
+    color: #387064;
+    transform: translate(10px , 100px);
+    animation: linkedin;
+    animation-duration: 2.5s;
+    transition: 0.5s;
+}
+
+.linkedin i:hover {
+    color: #3db59b;
+}
+
+@keyframes linkedin {
+    0% {
+        transform: translate(10px, 300px);
+    }
+
+    100% {
+        transform: translate(10px, 100px);
+    }
+}
+
+.miniline1 {
+    position: relative;
+    display: flex;
+    top:190px;
+    width: 150px;
+    height: 1px;
+    
+    background-color: #387064;
+    transform: translateX(-50px) rotate(-90deg);
+    animation: line1;
+    animation-duration: 4s;
+}
+
+@keyframes line1 {
+    0% {
+        top: 270px;
+    }
+
+    100% {
+        top: 190px;
+    }
+}
+
+
+.mail-link {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    right: 340px;
+    bottom: 180px;
+    color: #3D8374;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: 3px;
+    z-index: 100000000000;
+}
+
+.mail {
+    position: absolute;
+    cursor: pointer;
+    width: min-content;
+    font-size: 20px;
+    transform: translate(160px , -120px) rotate(90deg);
+    animation: mail;
+    animation-duration: 2s;
+    transition: 0.5s;
+}
+
+.myMail {
+    transform: translate(10px , -150px) rotate(0deg);
+}
+
+.mail:hover {
+    color: #3db59b;
+}
+
+@keyframes mail {
+    0% {
+        transform: translate(160px , 200px) rotate(90deg);
+    }
+}
+
+.mline {
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height: 1px;
+    background-color: #387064;
+    transform: translate(265px , 130px) rotate(-90deg);
+    animation: mline;
+    animation-duration: 2s;
+}
+
+@keyframes mline {
+    0% {
+        transform: translate(265px , 300px) rotate(-90deg); 
+    }
+}
+
+.about2 {
+    position: relative;
+    display: flex;
+    width: 1500px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+    height: auto;
+    top: 500px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gif {
+    width: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+.gif img {
+    position: relative;
+    top: 250px;
+    left: 0;
+    max-width: 600px;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.text-div {
+    position: relative;
+    top: 200px;
+    width: 850px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.text-div h1 {
+    color: #93AEFF;
+    font-size: 60px;
+}
+
+.text-div h3 {
+    letter-spacing: 2px;
+    color: #54D7BB;
+    margin-top: 15px;
+    font-size: 32px;
+}
+@media screen and (max-width: 1680px) {
+    .about2 {
+        padding-left: 0 150px;
+    }
+
+    .text-div h1 {
+        margin-bottom: 20px;
+    }
+    .gif img {
+        width: 90%;
+        max-width: 600px;
+        height: 500px auto;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (max-width:1368px) {
+    .gif {
+        display: none;
+    }
+
+    .text-div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+
+@media screen and (max-width:700px ) {
+    body {
+        overflow-x: none;
+    }
+    .line1 {
+        display: none;
+    }
+
+    .line2 {
+        display: none;
+    }
+    .links {
+        display: none;
+    }
+
+    .mail-link {
+        display: none;
+    }
+
+    .about {
+        position: relative;
+        display: flex;
+        top: 200px;
+        width: 500px;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 0;
+        height: auto;
+    }
+    .textcont h1 {
+        font-size: 50px;
+    }
+
+    .textcont h5 {
+        font-size: 20px;
+    }
+
+    .textcont h3 {
+        font-size: 35px;
+    }
+
+    .about2 {
+        top: 350px;
+        padding: 0;
+        margin: 0;
+        z-index: 100000;
+    }
+
+    .text-div h1 {
+        font-size: 5vh;
+    }
+
+    .text-div h3 {
+        font-size: 3vh;
+    }
+
+    .bg .fig4 {
+        display: none;
+    }
+}
